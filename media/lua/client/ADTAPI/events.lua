@@ -9,9 +9,9 @@ local getPlayer    = getPlayer
 -- local getText     = getText
 
 -- My Mod Modules
-local hooks        = require("ADTT/hooks")
-local translations = require("ADTT/translations")
-local logger       = require("ADTT/logger")
+local hooks        = require("ADTAPI/hooks")
+local translations = require("ADTAPI/translations")
+local logger       = require("ADTAPI/logger")
 
 -- ------------------------------ Module Start ------------------------------ --
 
@@ -44,7 +44,7 @@ end
 function events.register()
     logger.debug("Registering events...")
 
-    Events.OnKeyStartPressed.Add(events.on_key_start_pressed)
+    -- Events.OnKeyStartPressed.Add(events.on_key_start_pressed)
     Events.OnGameBoot.Add(events.on_game_boot)
 end
 

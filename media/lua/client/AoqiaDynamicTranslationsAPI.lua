@@ -2,8 +2,8 @@
 --                                 Entrypoint                                 --
 -- -------------------------------------------------------------------------- --
 
-local events = require("ADTT/events")
-local logger = require("ADTT/logger")
+local events = require("ADTAPI/events")
+local logger = require("ADTAPI/logger")
 
 -- ---------------------------------- ADTT ---------------------------------- --
 

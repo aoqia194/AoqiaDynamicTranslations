@@ -2,9 +2,9 @@
 --                             Hooks stuff for fun                            --
 -- -------------------------------------------------------------------------- --
 
-local constants    = require("ADTT/constants")
-local logger       = require("ADTT/logger")
-local translations = require("ADTT/translations")
+local constants    = require("ADTAPI/constants")
+local logger       = require("ADTAPI/logger")
+local translations = require("ADTAPI/translations")
 
 -- ------------------------------ Module Start ------------------------------ --
 

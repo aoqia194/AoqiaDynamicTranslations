@@ -2,7 +2,7 @@
 --                           A small logging module                           --
 -- -------------------------------------------------------------------------- --
 
-local constants = require("ADTT/constants")
+local constants = require("ADTAPI/constants")
 
 -- ------------------------------ Module Start ------------------------------ --
 
@@ -36,14 +36,14 @@ end
 
 function logger.error(...)
     local str = string.format("[%s] [ERROR] ###### %s ######", constants.MOD_ID, string.format(...))
-    
+
     print(str)
     error(str, 1)
 end
 
 function logger.error_server(...)
     local str = string.format("[%s/server] [ERROR] ###### %s ######", constants.MOD_ID, string.format(...))
-    
+
     print(str)
     error(str, 1)
 end
