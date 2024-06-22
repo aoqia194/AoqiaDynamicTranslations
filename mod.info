@@ -1,6 +1,6 @@
-name=Aoqia's Dynamic Translations
-id=AoqiaDynamicTranslations
-description=The goal is to add dynamically changing translations to the game. Includes an API for mods to change different mod translations too!
+name=aoqia's dynamic translations API
+id=AoqiaDynamicTranslationsAPI
+description=Includes an API for mods to change different mod translations!
 poster=poster.png
 versionMin=41.78.16
 modVersion=0.0.1

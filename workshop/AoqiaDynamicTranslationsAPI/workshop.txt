@@ -1,0 +1,7 @@
+version=1
+title=aoqia's dynamic translations api
+description=This is an API for other mods! It provides the ability to modify Lua translations at runtime!
+description=An example of how to use this mod is at my other mod AoqiaDynamicTranslations.
+description=
+description=GitHub repository: https://github.com/aoqia194/AoqiaDynamicTranslationsAPI
+visibility=public
