@@ -2,11 +2,6 @@
 --            Handles event stuff like registering listeners/hooks.           --
 -- -------------------------------------------------------------------------- --
 
--- STD Lua Global Tables/Variables
-local math         = math
--- STD Lua Global Functions
-local pairs        = pairs
-
 -- Vanilla Global Tables/Variables
 local Events       = Events
 -- Vanilla Global Functions
@@ -24,14 +19,20 @@ local events       = {}
 
 --- @param key_code integer
 function events.on_key_start_pressed(key_code)
-    if key_code ~= 157 then return end
+    local key = "IGUI_health_Overall_Body_Status"
 
-    local key = "Moodles_tired_desc_lvl1"
-    local text = translations.find(key)
-    if text == nil then return end
+    if key_code == 157 then -- RCTRL
+        logger.debug("Pressed Key RCTRL")
+        local text = translations.find(key)
+        if text == nil then return end
 
-    local new_text = text:sub(-1) .. text:sub(1, -2)
-    translations.update(key, new_text)
+        local new_text = text:sub(-1) .. text:sub(1, -2)
+        translations.update(key, new_text)
+    elseif key_code == 54 then -- RSHIFT
+        logger.debug("Pressed key RSHIFT")
+        if not translations.exists(key) and translations.exists_original(key) then return end
+        translations.reset(key)
+    end
 end
 
 function events.on_game_boot()
