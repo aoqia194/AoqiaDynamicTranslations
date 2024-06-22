@@ -4,12 +4,12 @@
 
 -- ------------------------------ Module Start ------------------------------ --
 
-local AQConstants = {}
+local constants = {}
 
-AQConstants.IS_DEBUG = getDebug() == true
-AQConstants.IS_LAST_STAND = getCore():getGameMode() == "LastStand"
+constants.IS_DEBUG = getDebug() == true
+constants.IS_LAST_STAND = getCore():getGameMode() == "LastStand"
 
-AQConstants.MOD_ID = "AoqiaDynamicTranslations"
-AQConstants.MOD_VERSION = "1.0.0"
+constants.MOD_ID = "AoqiaDynamicTranslationsTest"
+constants.MOD_VERSION = "0.0.1"
 
-return AQConstants
+return constants

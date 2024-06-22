@@ -78,18 +78,36 @@
         "codestyle-check": "Any"
     },
     "runtime.path": [
-        "server/?.lua",
         "shared/?.lua",
-        "client/?.lua"
+        "client/?.lua",
+        "server/?.lua"
     ],
     "completion.requireSeparator": "/",
     "runtime.builtin": {
+        "basic": "default",
+        "bit": "default",
+        "bit32": "default",
+        "builtin": "default",
+        "coroutine": "default",
         "debug": "disable",
+        "ffi": "default",
         "io": "disable",
-        "package": "disable"
+        "jit": "default",
+        "jit.profile": "default",
+        "jit.util": "default",
+        "math": "default",
+        "os": "default",
+        "package": "disable",
+        "string": "default",
+        "string.buffer": "default",
+        "table": "default",
+        "table.clear": "default",
+        "table.new": "default",
+        "utf8": "default"
     },
     "diagnostics.globals": [
-        "MF",
-        "TweakItem"
-    ]
+        // "MF",
+    ],
+    "workspace.checkThirdParty": false,
+    "workspace.preloadFileSize": 800
 }
