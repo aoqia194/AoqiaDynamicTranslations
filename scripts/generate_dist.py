@@ -24,6 +24,8 @@ EXCLUDE_PATTERNS = [
     "SANDBOX_OPTIONS.md",
     # Blender files
     "*.blend1",
+    # Photoshop files
+    "*.psd",
     # Lua workshop libs
     "ItemTweaker_Core.lua",
     "MF_ISMoodle.lua",
