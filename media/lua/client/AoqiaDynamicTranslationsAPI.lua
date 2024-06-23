@@ -5,7 +5,7 @@
 local events = require("ADTAPI/events")
 local logger = require("ADTAPI/logger")
 
--- ---------------------------------- ADTT ---------------------------------- --
+-- ------------------------------ Module Start ------------------------------ --
 
 events.register()
 logger.debug("Lua init done!")
