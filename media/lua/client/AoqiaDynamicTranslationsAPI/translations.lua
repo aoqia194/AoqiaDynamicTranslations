@@ -2,7 +2,7 @@
 --       Manages a translation cache that is used to change translations      --
 -- -------------------------------------------------------------------------- --
 
-local logger = require("ADTAPI/logger")
+local logger = require("AoqiaZomboidUtils/logger")
 
 -- ------------------------------ Module Start ------------------------------ --
 

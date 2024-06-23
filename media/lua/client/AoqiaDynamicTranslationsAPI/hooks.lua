@@ -2,8 +2,9 @@
 --                             Hook stuff for fun                             --
 -- -------------------------------------------------------------------------- --
 
-local logger       = require("ADTAPI/logger")
-local translations = require("ADTAPI/translations")
+local logger       = require("AoqiaZomboidUtils/logger")
+
+local translations = require("AoqiaDynamicTranslationsAPI/translations")
 
 -- ------------------------------ Module Start ------------------------------ --
 
