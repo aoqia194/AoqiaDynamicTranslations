@@ -36,7 +36,7 @@ EXCLUDED_DIRS = [".git", ".vscode", "dist", "scripts", "blender", "workshop"]
 print("Getting mod id...")
 
 MOD_ID = None
-with open("mod.info", "r", encoding="utf-8") as modinfo:
+with open(os.path.join(SRC, "mod.info"), "r", encoding="utf-8") as modinfo:
     for line in modinfo.readlines():
         if line.startswith("id="):
             MOD_ID = line.removeprefix("id=")
