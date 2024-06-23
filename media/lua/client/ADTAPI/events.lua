@@ -1,16 +1,12 @@
 -- -------------------------------------------------------------------------- --
---            Handles event stuff like registering listeners/hooks.           --
+--            Handles event stuff like registering callbacks.                 --
 -- -------------------------------------------------------------------------- --
 
--- Vanilla Global Tables/Variables
+-- Vanilla Globals
 local Events       = Events
--- Vanilla Global Functions
-local getPlayer    = getPlayer
--- local getText     = getText
 
 -- My Mod Modules
 local hooks        = require("ADTAPI/hooks")
-local translations = require("ADTAPI/translations")
 local logger       = require("ADTAPI/logger")
 
 -- ------------------------------ Module Start ------------------------------ --
