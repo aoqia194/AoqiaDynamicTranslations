@@ -13,15 +13,15 @@ Currently, you can only edit translations on the client side Lua as I don't have
 You can do that by requiring the mod and then calling the proper function like so (assuming that your translation has been cached by calling `getText(key)` *or* `translations.create(key, value)` **AT LEAST ONCE**):
 
 ```lua
-local ADTAPI = require("ADTAPI/translations")
+local ADTAPI = require("AoqiaDynamicTranslationsAPI/translations")
 
 -- Appends "123" to the translation
 local key = "IGUI_MyTestTranslation"
-local value = translations.find(key)
+local value = ADTAPI.find(key)
 if value == nil then return end
 
 local new_value = value .. "123"
-translations.update(key, new_value)
+ADTAPI.update(key, new_value)
 ```
 
 ### How do I add a translation that changes languages at runtime?
