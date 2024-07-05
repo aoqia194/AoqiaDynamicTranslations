@@ -15,13 +15,13 @@ local hooks  = require("AoqiaDynamicTranslationsAPI/hooks")
 local events = {}
 
 function events.on_game_boot()
-    logger.debug("Hooking getText...")
+    logger:debug("Hooking getText...")
     hooks.o_get_text = getText
     getText = hooks.get_text
 end
 
 function events.register()
-    logger.debug("Registering events...")
+    logger:debug("Registering events...")
 
     Events.OnGameBoot.Add(events.on_game_boot)
 end
