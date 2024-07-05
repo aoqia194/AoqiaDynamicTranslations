@@ -22,7 +22,7 @@ function hooks.get_text(...)
     -- TODO: Optimise this function LIKE BRICKS. It will run *every frame* in most cases for always-shown text.
     -- This means if-checking func calls for less overhead, min-maxing basically.
 
-    -- logger.debug("Intercepted getText call with text (%s)!", tostring(select(1, ...)))
+    -- logger:debug("Intercepted getText call with text (%s)!", tostring(select(1, ...)))
 
     local key = tostring(select(1, ...))
     local value = hooks.o_get_text(...)
@@ -34,7 +34,7 @@ function hooks.get_text(...)
 
     -- If the translation doesn't exist in the cache, create it and return the value from the original getText
     if not translations.exists(key) then
-        logger.debug("Creating translation (%s) with value (%s)", key, value)
+        logger:debug("Creating translation (%s) with value (%s)", key, value)
 
         translations.create(key, value)
         return value
@@ -43,7 +43,7 @@ function hooks.get_text(...)
     -- Otherwise return the translation in the cache.
     local translation = translations.find(key)
     if translation == nil then
-        logger.warn("Translation (%s) was nil.", key)
+        logger:warn("Translation (%s) was nil.", key)
     end
 
     return translation or "nil"

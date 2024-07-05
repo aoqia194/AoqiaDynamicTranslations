@@ -70,12 +70,12 @@ function translations.update_language(key, language_code)
         -- Try to get translation using getText
         translation = getText(new_key)
         if translation == "nil" then
-            logger.debug("Couldn't get new language translation, falling back to default...")
+            logger:debug("Couldn't get new language translation, falling back to default...")
 
             -- Try to get DEFAULT using cache
             translation = translations.find_original(key)
             if translation == nil then
-                logger.warn("Translation (%s) was nil when trying to update language to (%s).", key, language_code)
+                logger:warn("Translation (%s) was nil when trying to update language to (%s).", key, language_code)
                 return
             end
         end

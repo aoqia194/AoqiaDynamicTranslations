@@ -12,4 +12,4 @@ local events = require("AoqiaDynamicTranslationsAPI/events")
 logger.register(mod_constants.MOD_ID)
 events.register()
 
-logger.debug("Lua init done!")
+logger:debug("Lua init done!")
