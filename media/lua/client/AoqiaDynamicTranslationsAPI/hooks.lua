@@ -2,15 +2,16 @@
 --                             Hook stuff for fun                             --
 -- -------------------------------------------------------------------------- --
 
-local logger       = require("AoqiaZomboidUtils/logger")
+local mod_constants = require("AoqiaDynamicTranslationsAPI/mod_constants")
+local translations  = require("AoqiaDynamicTranslationsAPI/translations")
 
-local translations = require("AoqiaDynamicTranslationsAPI/translations")
+local logger        = mod_constants.LOGGER
 
 -- ------------------------------ Module Start ------------------------------ --
 
-local hooks        = {}
+local hooks         = {}
 
-hooks.o_get_text   = nil
+hooks.o_get_text    = nil
 
 --- @return string
 --- @overload fun(text: string): string
