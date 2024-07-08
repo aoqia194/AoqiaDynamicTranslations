@@ -3,6 +3,6 @@ id=AoqiaDynamicTranslationsAPI
 description=Includes an API for mods to change different translations!
 poster=poster.png
 versionMin=41.78.16
-modVersion=1.0.2
+modVersion=1.0.3
 url=https://github.com/aoqia194/AoqiaDynamicTranslationsAPI/
 require=AoqiaZomboidUtils
