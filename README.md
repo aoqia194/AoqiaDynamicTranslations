@@ -10,7 +10,7 @@ Currently, you can only edit translations on the client side Lua as I don't have
 
 To clear up some confusion:
 - Any mod that doesn't use ADTAPI can still get backwards compatibility features of ADTAPI as long as ADTAPI is installed itself.
-- Any mod that does depend on ADTAPI can use its full feature set to dynamically modify translations at runtime (even translations from a mod that doesn't use ADTAPI). Keep in mind that dynamic translations will not work for mods that don't specifically use ADTAPI as it's required to set up very specifically.
+- Any mod that does depend on ADTAPI can use its full feature set to dynamically modify translations at runtime (even translations from a mod that doesn't use ADTAPI). Keep in mind that dynamic language translations will not work for mods that don't specifically use ADTAPI as it's required to set up very specifically.
 
 Do NOT paste any code in these examples. The code provided is purposely provided as example code and is to help the developer understand features of the API. It is not a complete replica of what real code should look like, and is just an example! You can follow it and even use most of it, but some things aren't taken into account.
 
