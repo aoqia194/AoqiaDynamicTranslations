@@ -3,16 +3,18 @@
 -- -------------------------------------------------------------------------- --
 
 -- Vanilla Globals
-local Events = Events
+local Events        = Events
 
 -- My Mod Modules
-local logger = require("AoqiaZomboidUtils/logger")
 
-local hooks  = require("AoqiaDynamicTranslationsAPI/hooks")
+local hooks         = require("AoqiaDynamicTranslationsAPI/hooks")
+local mod_constants = require("AoqiaDynamicTranslationsAPI/mod_constants")
+
+local logger        = mod_constants.LOGGER
 
 -- ------------------------------ Module Start ------------------------------ --
 
-local events = {}
+local events        = {}
 
 function events.on_game_boot()
     logger:debug("Hooking getText...")
