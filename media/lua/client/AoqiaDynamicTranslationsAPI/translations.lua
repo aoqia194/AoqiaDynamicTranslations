@@ -2,7 +2,9 @@
 --       Manages a translation cache that is used to change translations      --
 -- -------------------------------------------------------------------------- --
 
-local logger = require("AoqiaZomboidUtils/logger")
+local mod_constants = require("AoqiaDynamicTranslationsAPI/mod_constants")
+
+local logger = mod_constants.LOGGER
 
 -- ------------------------------ Module Start ------------------------------ --
 
