@@ -1,5 +1,7 @@
 ## Aoqia's Dynamic Translations API (ADTAPI)
 
+EDIT: No longer maintained as it was a proof of concept mod. I realised that it doesn't function well in the Lua side of modding. Adding hot-reloading of translations via Java modding would be more sufficient.
+
 A mod to add dynamic translations to Project Zomboid. Also on the Steam Workshop!
 
 ### What does this do?
